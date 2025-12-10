@@ -9,7 +9,7 @@ package paquete1;
  *
  * @author reroes
  */
-public class Ejemplo042 {
+public class Ejemplo043 {
 
     /**
      * @param args the command line arguments
@@ -20,26 +20,23 @@ public class Ejemplo042 {
         // arreglo de tipo entero
         // int[] arreglo1 = new int[5];
         int suma = 0;
-        int[] arreglo1 = {1000, 1, 2, 2000, 300};
+        int[] arreglo1 = {1001, 1, 2, 2000, 300};
         String acumulador = "";
         // System.out.println(arreglo1.length);
         // arreglo1[2] = 1000;
         for (int i = 0; i < arreglo1.length; i++) {
-            if (arreglo1[1]>=1000){
-                
+            if (arreglo1[i] >= 1000 || arreglo1[i] %2 == 0) {
+                suma = suma + arreglo1[i];
             }
-            
-            suma = suma + arreglo1[i];
             acumulador = String.format("%sSubíndice o Índice %d, "
-                    + "con valor %d\n", 
-                    acumulador,i, arreglo1[i]);
-            
+                    + "con valor %d\n",
+                    acumulador, i, arreglo1[i]);
         }
-        acumulador = String.format("%sLa suma total es: %d\n", 
+        acumulador = String.format("%sLa suma total es: %d\n",
                 acumulador, suma);
-        System.out.printf("%s\n", 
+        System.out.printf("%s\n",
                 acumulador);
-        
+
     }
 
 }
