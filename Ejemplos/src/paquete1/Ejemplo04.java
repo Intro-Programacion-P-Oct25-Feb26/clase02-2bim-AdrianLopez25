@@ -22,6 +22,8 @@ public class Ejemplo04 {
         int[] arreglo1 = {1000, 1, 2, 2000, 300};
         // System.out.println(arreglo1.length);
         // arreglo1[2] = 1000;
+        // el length sirve para obtener la cantidad de elementos, 
+        //cogiendo valores del arreglo hasta el limite que tenga
         for (int i = 0; i < arreglo1.length; i++) {
             System.out.printf("Subíndice o Índice %d, con valor %d\n",
                     i, arreglo1[i]);
